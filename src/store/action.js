@@ -58,6 +58,9 @@ export const auth = (uid, authKey) => {
     };
 };
 
+
+
+
 export const authCheckState = () => {
     return dispatch => {
         CometChat.getLoggedinUser().then(user => {

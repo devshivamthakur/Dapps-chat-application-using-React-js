@@ -6,6 +6,7 @@ export const wrapperStyle = () => {
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
+        
     }
 }
 
@@ -15,7 +16,7 @@ export const titleStyle = () => {
 
     return {
         textAlign: "center",
-        color: "rgb(67, 171, 255)",
+        color: "#fff",
         fontSize: "24px",
         width: "100%",
         padding: "0 1em",
@@ -32,7 +33,7 @@ export const subTitleStyle = () => {
 
     return {
         textAlign: "center",
-        color: "#AAA",
+        color: "#fff",
         fontSize: "14px",
         width: "100%",
         padding: "0 1em",
@@ -192,11 +193,11 @@ export const linkWrapperStyle = () => {
 export const linkStyle = () => {
 
     return {
-        color: "rgb(67, 171, 255)!important",
+        color: "#fff!important",
         fontWeight: 600,
         fontSize: "14px",
         "&:hover": {
-            color: "darken(rgb(67, 171, 255), 20%)",
+            color: "#fff",
             fontWeight: "600",
             fontSize: "14px",
         }

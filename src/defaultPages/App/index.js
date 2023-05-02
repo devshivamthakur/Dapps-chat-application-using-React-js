@@ -8,7 +8,7 @@ import { jsx } from "@emotion/react";
 
 import PrivateRoute from '../../PrivateRoute';
 
-import KitchenSinkApp from '../../defaultPages/KitchenSinkApp';
+import KitchenSinkApp from '../../defaultPages/DappsApp';
 import HomePage from '../../defaultPages/HomePage';
 
 import * as actions from '../../store/action';
@@ -27,6 +27,7 @@ import {
 import {
     wrapperStyle
 } from "./style";
+import Register from '../DappsApp/Register';
 
 const history = createBrowserHistory();
 
@@ -55,6 +56,7 @@ class App extends React.Component {
                         <PrivateRoute path="/messages" component={CometChatMessages} chatWithGroup="supergroup" />
                         <PrivateRoute exact path="/" component={HomePage} />
                         <Route path="/login" component={KitchenSinkApp} />
+                        <Route path="/register" component={Register} />
                     </Switch>
                 </Router>
             </div>
